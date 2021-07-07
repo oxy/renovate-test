@@ -1,5 +1,16 @@
 {
-  "extends": [
-    "config:base"
-  ]
+    "rangeStrategy": "replace",
+    "ignorePaths": [
+        "lib/"
+    ],
+    "extends": [
+        "config:base"
+    ],
+    "packageRules": [
+        {
+            "matchUpdateTypes": ["minor", "patch", "digest"],
+            "automerge": true,
+            "groupName": "Minor dependency updates"
+        }
+    ]
 }
