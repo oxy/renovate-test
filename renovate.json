@@ -10,7 +10,7 @@
             "groupName": "Minor dependency updates"
         },
         {
-            "matchPaths": "lib/",
+            "matchPaths": ["lib/"],
             "enabled": false
         }
     ],
