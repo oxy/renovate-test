@@ -1,8 +1,5 @@
 {
     "rangeStrategy": "replace",
-    "ignorePaths": [
-        "lib/"
-    ],
     "extends": [
         "config:base"
     ],
@@ -11,6 +8,13 @@
             "matchUpdateTypes": ["minor", "patch", "digest"],
             "automerge": true,
             "groupName": "Minor dependency updates"
+        },
+        {
+            "matchPaths": "lib/",
+            "enabled": false
         }
-    ]
+    ],
+    "vulnerabilityAlerts": {
+        "enabled": "true"
+    }
 }
